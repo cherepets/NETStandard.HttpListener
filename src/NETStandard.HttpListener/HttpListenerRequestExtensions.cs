@@ -20,7 +20,7 @@ namespace System.Net.Http
             foreach (var valuePair in data)
             {
                 var value = HttpUtility.UrlDecode(valuePair.Value);
-                values[valuePair.Key] = valuePair.Value;
+                values[valuePair.Key] = value;
             }
 
             return values;
@@ -46,7 +46,7 @@ namespace System.Net.Http
             foreach (var valuePair in data)
             {
                 var value = HttpUtility.UrlDecode(valuePair.Value);
-                values[valuePair.Key] = valuePair.Value;
+                values[valuePair.Key] = value;
             }
 
             return values;
